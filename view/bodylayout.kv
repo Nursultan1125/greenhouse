@@ -1,0 +1,892 @@
+
+<BodyLayout>:
+    
+    cols: 5
+    rows: 1
+    spacing: 10
+    padding: 10
+    canvas:
+        Color:
+            rgba: 0, 0, 0.3, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            id: label1
+            background_normal: ''
+            background_down: ''
+            background_color: 0.5, 1, 0, 1
+            size_hint: 1, 0.5
+            padding: (10, 10)
+            text: "Arduino 1"
+            font_size: 15
+            halign: 'left'
+            color: 0, 0, 1, 1
+            
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a1_t1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a1_h1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a1_t2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a1_h2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/press.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0.5, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a1_p
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.8, 0.8, 0.5, 1
+                margin: 10
+                padding: (15, 10)
+                text: "91235.21 P"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+##################################################
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint: 1, 0.5
+            padding: (10, 10)
+            text: "Arduino 2"
+            font_size: 20
+            halign: 'left'
+            color: 0, 0, 1, 1
+            canvas.before:
+                Color:
+                    rgba: 0.5, 1, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 00.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a2_t1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a2_h1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a2_t2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a2_h2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/press.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0.5, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a2_p
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.8, 0.8, 0.5, 1
+                margin: 10
+                padding: (15, 10)
+                text: "92252.21 P"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+    #############
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint: 1, 0.5
+            padding: (10, 10)
+            text: "Arduino 3"
+            font_size: 20
+            halign: 'left'
+            color: 0, 0, 1, 1
+            canvas.before:
+                Color:
+                    rgba: 0.5, 1, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a3_t1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a3_h1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a3_t2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a3_h2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/press.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0.5, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a3_p
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.8, 0.8, 0.5, 1
+                margin: 10
+                padding: (15, 10)
+                text: "92352.21 P"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+##########################################
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint: 1, 0.5
+            padding: (10, 10)
+            text: "Arduino 4"
+            font_size: 20
+            halign: 'left'
+            color: 0, 0, 1, 1
+            canvas.before:
+                Color:
+                    rgba: 0.5, 1, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a4_t1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a4_h1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a4_t2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a4_h2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/press.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0.5, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a4_p
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.8, 0.8, 0.5, 1
+                margin: 10
+                padding: (15, 10)
+                text: "92352.21 P"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+#############################################
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint: 1, 0.5
+            padding: (10, 10)
+            text: "Arduino 5"
+            font_size: 20
+            halign: 'left'
+            color: 0, 0, 1, 1
+            canvas.before:
+                Color:
+                    rgba: 0.5, 1, 0, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a5_t1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a5_h1
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/temperatuer.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.9, 0.9, 0.9, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a5_t2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.9, 0.9, 0.9, 1
+                margin: 10
+                padding: (15, 10)
+                text: "22.21 °C"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/hum.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.7, 0.7, 0.7, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a5_h2
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.7, 0.7, 0.7, 1
+                margin: 10
+                padding: (15, 10)
+                text: "52.21 %"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        BoxLayout:
+            orientation: 'horizontal'
+            Image:
+                source: 'view/icons/press.png'
+                size_hint: None, None
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0.5, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            Button:
+                id: a5_p
+                size_hint: 1, None
+                background_normal: ''
+                background_down: ''
+                background_color: 0.8, 0.8, 0.5, 1
+                margin: 10
+                padding: (15, 10)
+                text: "93252.21 P"
+                text_size: self.size
+                font_size: 25
+                halign: 'left'
+                valign: 'middle'
+                color: 0, 0, 1, 1
+                canvas.before:
+                    Color:
+                        rgba: 0.5, 1, 0, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+
+
+    

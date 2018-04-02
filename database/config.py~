@@ -1,0 +1,2 @@
+NAME_DATABASE = "mydb.sqlite"
+TABLE_NAME = "data_dht"

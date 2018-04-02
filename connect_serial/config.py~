@@ -1,0 +1,4 @@
+PORT_NAME = '/dev/ttyACM0'
+BAUD = 9600
+COUNT_PARAM = 6
+
